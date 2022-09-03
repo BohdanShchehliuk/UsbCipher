@@ -9,15 +9,5 @@ public class Main {
         Thread dt = new Thread(new DaemonThread());
         dt.setDaemon(true);
         dt.run();
-        USBSearcher usbSearcher = new USBSearcher();
-        USBDeviceDetectorManager driveDetector = new USBDeviceDetectorManager();
-        // Display all the USB storage devices currently connected
-        List<USBStorageDevice> usbStorageDeviceList = driveDetector.getRemovableDevices();
-        File folder = new File(usbStorageDeviceList.get(0).getRootDirectory().getPath());
-        usbSearcher.findFiles(folder);
-        System.out.println(usbSearcher.count);
-        System.out.println(usbSearcher.count1);
-
-
     }
 }
