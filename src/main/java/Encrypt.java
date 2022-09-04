@@ -6,12 +6,12 @@ import java.io.FileOutputStream;
 public class Encrypt {
 
     // secret KEY for encrypting
-    static private final byte[] KEYVALUE = "6^)(9-p35@%3#4S!4S0)$Y%%^&5(j.&^&o(*0)$Y%!#O@*GpG@=+@j.&6^)(0-=+"
+    private static final byte[] KEYVALUE = "6^)(9-p35@%3#4S!4S0)$Y%%^&5(j.&^&o(*0)$Y%!#O@*GpG@=+@j.&6^)(0-=+"
             .getBytes();
     static private final int BUFFERLEN = 1024;
 
     /**
-     * to encrypt files
+     * method for encrypting files
      *
      * @param String oldFile  - source (path) file for encryption
      * @param String newFile - file (path) after encryption
@@ -44,7 +44,7 @@ public class Encrypt {
     }
 
     /**
-     * to decrypt files
+     * method for decrypting files
      *
      * @param String oldFile  - source (path) file for decryption
      * @param String newFile - file (path) after decryption
