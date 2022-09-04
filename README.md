@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UsbCipher
 
 The project involves **searching** for **files of a given type** from flash drives inserted into the computer, their **
@@ -57,3 +58,6 @@ The program has created a test that checks the correct encryption and decryption
 
 when searching for USB programs using the
 library [USB Drive Detector](https://mvnrepository.com/artifact/net.samuelcampos/usbdrivedetector/2.2.1)
+=======
+
+>>>>>>> origin/master
