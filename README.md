@@ -51,7 +51,7 @@ Assigns the daemon status to the thread and starts the program
 ## Test
 
 The program has created a test that checks the correct encryption and decryption of the file:
-[TestOrigin.docx](./src/test/java/resoursesForTest/ТестOrigin.docx)
+[TestOrigin.docx](./src/test/java/resoursesForTest/TestOrigin.docx)
 
 ---
 
