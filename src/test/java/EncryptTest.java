@@ -15,17 +15,17 @@ class EncryptTest {
 
     @Test
     void encryptFile() throws Exception {
-//        String originFile = "resoursesForTest/TestOrigin.docx";
-//        String encryptedFile = "resoursesForTest/TestEncrypt.docx";
-//        String decryptedFile = "resoursesForTest/TestDecrypt.docx";
-//        Encrypt encrypt = new Encrypt();
-//        encrypt.encryptFile(originFile, encryptedFile);
-//        encrypt.decryptFile(encryptedFile, decryptedFile);
-//        File orig = new File(originFile);
-//        File encr = new File(encryptedFile);
-//        File decr = new File(decryptedFile);
-//        boolean trueOne = FileUtils.contentEquals(orig, decr);
-//        boolean falseOne = FileUtils.contentEquals(orig, encr);
-//        assertEquals(trueOne, !falseOne);
+        String originFile = "resoursesForTest/TestOrigin.docx";
+        String encryptedFile = "resoursesForTest/TestEncrypt.docx";
+        String decryptedFile = "resoursesForTest/TestDecrypt.docx";
+        Encrypt encrypt = new Encrypt();
+        encrypt.encryptFile(originFile, encryptedFile);
+        encrypt.decryptFile(encryptedFile, decryptedFile);
+        File orig = new File(originFile);
+        File encr = new File(encryptedFile);
+        File decr = new File(decryptedFile);
+        boolean trueOne = FileUtils.contentEquals(orig, decr);
+        boolean falseOne = FileUtils.contentEquals(orig, encr);
+        assertEquals(trueOne, !falseOne);
     }
 }
