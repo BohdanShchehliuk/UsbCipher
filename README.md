@@ -55,9 +55,5 @@ The program has created a test that checks the correct encryption and decryption
 ---
 
 ## USB Drive Detector
-
 when searching for USB programs using the
 library [USB Drive Detector](https://mvnrepository.com/artifact/net.samuelcampos/usbdrivedetector/2.2.1)
-=======
-
->>>>>>> origin/master
