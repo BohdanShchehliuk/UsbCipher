@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # UsbCipher
 
 The project involves **searching** for **files of a given type** from flash drives inserted into the computer, their **
